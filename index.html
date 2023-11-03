@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Pizza!</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- JavaScript -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- Student ID/Name-->
+    <div id="student-info"></div>
+
+    <!-- Order Pizza Form -->
+    <form id="pizzaOrderForm">
+        <h1>Order Pizza!</h1>
+
+        <label for="size">Choose a pizza size:</label>
+        <select id="size" name="size" required>
+            <option value="">Choose an option</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+
+        <label for="crust">Choose a crust type:</label>
+        <select id="crust" name="crust" required>
+            <option value="">Choose an option</option>
+            <option value="thin">Thin</option>
+            <option value="thick">Thick</option>
+            <option value="stuffed">Stuffed</option>
+        </select>
+
+        <label for="cheese">Select your cheese:</label>
+        <select id="cheese" name="cheese" required>
+            <option value="">Choose an option</option>
+            <option value="none">No cheese</option>
+            <option value="regular">Regular</option>
+            <option value="extra">Extra</option>
+        </select>
+
+        <!-- Toppings Section -->
+        <div class="toppings">
+            <div class="toppings-container">
+                <div class="topping">
+                    <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="onions" name="toppings" value="onions">
+                    <label for="onions">Onions</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="spinach" name="toppings" value="spinach">
+                    <label for="spinach">Spinach</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="bacon" name="toppings" value="bacon">
+                    <label for="bacon">Bacon</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="peppers" name="toppings" value="peppers">
+                    <label for="peppers">Peppers</label>
+                </div>
+            </div>
+        </div>
+
+        <input type="submit" id="orderButton" value="Order">
+    </form>
+
+    <div id="output"></div>
+
+</body>
+
+</html>
